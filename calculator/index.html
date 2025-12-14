@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="expression" id="expression"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="function-btn" onclick="insertChar('(')">(</button>
+            <button class="function-btn" onclick="insertChar(')')">)</button>
+            <button class="function-btn" onclick="answer()">ans</button>
+            <button class="function-btn" onclick="backspace()">del</button>
+            <button class="function-btn" onclick="clearDisplay()">clear</button>
+            
+            <button class="number" onclick="insertChar('7')">7</button>
+            <button class="number" onclick="insertChar('8')">8</button>
+            <button class="number" onclick="insertChar('9')">9</button>
+            <button class="operator" onclick="insertChar('%')">%</button>
+            <button class="operator" onclick="squareRoot()">√</button>
+            
+            <button class="number" onclick="insertChar('4')">4</button>
+            <button class="number" onclick="insertChar('5')">5</button>
+            <button class="number" onclick="insertChar('6')">6</button>
+            <button class="operator" onclick="insertChar('*')">x</button>
+            <button class="operator" onclick="insertChar('/')">÷</button>
+            
+            <button class="number" onclick="insertChar('1')">1</button>
+            <button class="number" onclick="insertChar('2')">2</button>
+            <button class="number" onclick="insertChar('3')">3</button>
+            <button class="operator" onclick="insertChar('+')">+</button>
+            <button class="operator" onclick="insertChar('-')">−</button>
+            
+            <button class="number" onclick="insertChar('.')">.</button>
+            <button class="number" onclick="insertChar('0')">0</button>
+            <button class="operator" onclick="plusMinus()">±</button>
+            <button class="enter-btn" onclick="calculate()">ENTER</button>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
